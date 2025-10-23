@@ -222,9 +222,6 @@ else
     echo "Manpage repo not accessible; skipping clone and related script creation."
 fi
 
-sudo yum remove bzip2
-
-
 ### 11) Final cleanup: delete only repo files this script created, then clear history and reboot
 echo "Final cleanup: removing repo files created by this script (if any)."
 if [ ${#CREATED_REPOS[@]} -ne 0 ]; then
